@@ -1,12 +1,3 @@
-@import url('https://fonts.cdnfonts.com/css/mostraone');
-
-/* font-family: 'MostraOne', sans-serif;
-font-family: 'MostraOneBold', sans-serif;
-font-family: 'MostraOneLight', sans-serif; */
-
-@import url('https://fonts.cdnfonts.com/css/klubkatz');
-/* font-family: 'KlubKatz', sans-serif; */
-
 @import url('https://fonts.cdnfonts.com/css/fashionism');
 /* font-family: 'Fashionism', sans-serif; */
 
@@ -41,7 +32,7 @@ body{
     border-width: 96px 96px 0 96px;
     height: 50vh;
     border-color: #babdbd transparent transparent transparent;
-    left: 15%;
+    left: 18%;
     transform: translateX(-50%) translateY(100%);
 }
 
@@ -84,24 +75,57 @@ footer{
     height: 35vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ubicacion{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ubicacion h5{
+    font-size: 25px; 
+    color: black;
+    position: absolute; 
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.ubicacion iframe{
+    width: 250px;
+    height: 200px;
+}
+
+.ubicacion::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 215px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.452) 0%, rgba(255, 255, 255, 0.678) 100%);
 }
 
 .datosredes{
-    width: 60%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;   
+    flex-direction: column; 
+    align-items: center;  
+    margin-left: 30px; 
+    
 }
 
 h4{
     font-size: 25px;
+    padding: 20px;
+    margin-top: 90px;    
 }
 
 .iconos a{
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     padding: 20px;    
 }
 
@@ -109,14 +133,13 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
 }
 
 .informes a{
     text-decoration: none;
     color: black;
     font-size: 25px;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px; 
 }
 
@@ -130,7 +153,7 @@ footer::before {
     border-width: 96px 96px 0 96px;
     height: 25vh;
     border-color: #babdbd transparent transparent transparent;
-    left: 15%;
+    left: 18%;
     transform: translateX(-50%) translateY(0%);
 }
 
@@ -148,12 +171,10 @@ footer::before {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    
-
 }
 
 .card{
-    width: 370px;
+    width: 450px;
     height: auto;
     margin: 20px 0px 20px 20px;
     padding: 100px 20px 20px 20px;
@@ -165,6 +186,7 @@ footer::before {
 p{
     padding: 20px;
     line-height: 1.5;
+    margin: 0 auto;
 }
 
 .imagenes{
